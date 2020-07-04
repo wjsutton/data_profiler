@@ -44,8 +44,25 @@ inspect_cat(iris) # summaries of categorical columns
 # From documentation provides extensive data checks
 # There may be some functional here that can be leveraged 
 # into a workflow for a procedure
+library(ISLR)
+library(SmartEDA)
 
+Carseats= ISLR::Carseats
 
+# Below gives % missing = completeness
+# & gives num of unique values = consistency
+ExpData(data=iris,type=2)
+
+# Distribution of numeric data as table
+ExpNumStat(iris,by="A",gp=NULL,Qnt=seq(0,1,0.1),MesofShape=2,Outlier=TRUE,round=2)
+
+# Distribution of categorial data
+ExpCTable(iris,Target=NULL,margin=1,clim=10,nlim=5,round=2,bin=NULL,per=T)
+
+# correlation of data points?
+
+# Loop to show data points that could predict?
+ExpCatStat(iris,Target=names(iris)[1],result="Stat",Pclass="Yes",plot=FALSE,top=20,Round=2)
 
 # Idea for this repo
 # Creating distribution plots for a HTML report on data quality
