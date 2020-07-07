@@ -1,4 +1,7 @@
 # The Data Profiler Function 
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/wjsutton/data_profiler.svg)](https://github.com/wjsutton/data_profiler/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/wjsutton/data_profiler.svg)](https://github.com/wjsutton/data_profiler/pulls) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
 The aim of the function is to profile a simple data quality check on an object it is given. 
 
 First a message is printed describing the structure of the object inputted and its dimensions.
